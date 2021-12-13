@@ -1,11 +1,12 @@
 package city;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class City {
     private String name;
     private long area;
-    private List<Building> buildings;
+    private List<Building> buildings = new ArrayList<>();
 
     public City(String name, long area) {
         this.name = name;
