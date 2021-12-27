@@ -21,6 +21,7 @@ class CityTest {
         city.addBuilding(new Office(222, 9, new Address("Üllői", 1), "LG", 56));
     }
 
+
     @Test
     void createCity() {
         City city = new City("Budapest", 300000L);
@@ -52,7 +53,7 @@ class CityTest {
         assertEquals("City can't be larger than 500", iae.getMessage());
     }
 
-/*
+
     @Test
     void findHighestBuildingInCityTest() {
         Building building = city.findHighestBuilding();
@@ -60,6 +61,7 @@ class CityTest {
         assertEquals(10, building.getLevels());
         assertEquals(220, building.getArea());
     }
+
 
     @Test
     void findBuildingsByStreetTest() {
@@ -77,5 +79,4 @@ class CityTest {
         assertFalse(city.isThereBuildingWithMorePeopleThan(496));
     }
 
-*/
 }
